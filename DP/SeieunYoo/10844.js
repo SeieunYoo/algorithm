@@ -5,7 +5,7 @@ const input = fs.readFileSync(filePath).toString().trim().split('\n');
 
 const n = Number(input.shift());
 const num = 1000000000;
-let dp = Array.from(Array(101), () => new Array(10).fill(0)); //visited 배열을 먼저 false 로 채워줌
+let dp = Array.from(Array(101), () => new Array(10).fill(0));
 let answer = 0;
 
 for (let i = 1; i <= 9; i++) {
